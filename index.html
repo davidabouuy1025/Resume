@@ -3,52 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-
     <title>What's About Me</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font (clean modern look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="navi-bar">
-        <span class="navi-title"><b>RESUME</b></span> 
-        <div class="navi-links">
-            <a href="" class="navi-bar-links">About Myself</a>
-            <a href="" class="navi-bar-links">Education</a>
-            <a href="" class="navi-bar-links">Experience</a>
-            <a href="" class="navi-bar-links">More</a>
+    <!-- ===== Navigation Bar ===== -->
+    <header class="navbar">
+        <div class="nav-title">RESUME</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#more">More</a>
+        </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="about">
+        <div class="hero-text">
+            <h1>Hi, I’m <span class="highlight">Jun Ming</span></h1>
+            <p>
+                A <b>tech-savvy and analytical individual</b> with strong foundations in 
+                <b>Computer Science</b> and <b>Mathematics</b>.<br><br>
+                Skilled in problem-solving, logical thinking, and system design — always 
+                eager to explore new technologies and real-world challenges.
+            </p>
+            <button class="btn" id="contactBtn">📞 Contact Me</button>
         </div>
-    </div>
-    
-    <div class="hero-sec" id="hero-sec">
-        <div class="here-sec-pic">
-            <img src="Picture1.jpg" alt="Picture1" class="picture1">
+        <div class="hero-img">
+            <img src="images/your-photo.jpg" alt="Profile Picture">
         </div>
+    </section>
 
-        <div class="hero-sec-txt">
-            A <b>tech-savvy and analytical individual</b> with a strong foundation in <b>computer science</b> and <b>mathematics</b>. 
-            <br><br>
-            Skilled in problem-solving, logical thinking, and technical tools, with a passion for exploring systems, algorithms, and software. 
-            <br><br>
-            Experienced in working with various computer applications and data, and always eager to learn and apply new technologies to real-world challenges.
+    <!-- ===== Marquee Text ===== -->
+    <div class="scroll-text">
+        <span>WELCOME TO MY WEBSITE • LEARN MORE ABOUT ME • KEEP SCROLLING ↓</span>
+    </div>
+
+    <!-- ===== Education Section ===== -->
+    <section class="section" id="education">
+        <h2>🎓 Education</h2>
+        <div class="content-box">
+            <!-- Example entry -->
+            <div class="card">
+                <h3>Monash University</h3>
+                <p>Bachelor of Computer Science</p>
+                <p><i>2023 – Present</i></p>
+            </div>
+
+            <!-- TODO: Add more education details here -->
         </div>
-    </div>
+    </section>
 
-    <div class="flowing-text" id="flowing-text">
-        <span>  WELCOME! WELCOME! WELCOME TO MY WEBSITE!</span>
-    </div>
+    <!-- ===== Experience Section ===== -->
+    <section class="section dark" id="experience">
+        <h2>💼 Experience</h2>
+        <div class="content-box">
+            <div class="card">
+                <h3>Software Project: EchoLink</h3>
+                <p>Developed a social communication platform integrating MySQL and Streamlit.</p>
+            </div>
 
-    <div class="edu-sec">
-        <>
-    </div>
+            <!-- TODO: Add more experiences or internships -->
+        </div>
+    </section>
 
-    <div class="exp-sec">
-        <>
-    </div>
+    <!-- ===== More Section ===== -->
+    <section class="section" id="more">
+        <h2>✨ More About Me</h2>
+        <div class="content-box">
+            <p>I enjoy exploring cybersecurity, ethical hacking, and system design. 
+               In my free time, I compose rhythms for 24 Festive Drums performances 🥁.</p>
+            <!-- TODO: Add hobbies, goals, or achievements -->
+        </div>
+    </section>
 
-    <div class="more-sec">
-        <>
-    </div>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <p>© 2025 Jun Ming. Built with 💻 HTML, CSS & JavaScript.</p>
+    </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
