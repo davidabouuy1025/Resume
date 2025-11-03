@@ -13,7 +13,7 @@ function revealSections() {
 
 // ===== Smooth Contact Button Action =====
 document.getElementById('contactBtn').addEventListener('click', () => {
-  alert("📧 You can reach me at: junming@example.com");
+  alert("You can reach me at: \n📞 +6019-3402828\n📧 myleejm23@gmail.com");
 });
 
 // ===== Add Fade-in Animation Class =====
