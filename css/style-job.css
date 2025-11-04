@@ -1,0 +1,93 @@
+/* ===== Basic Styling ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e10;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #141418;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.nav-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.nav-links .nav-btn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-btn:hover {
+  color: #00bcd4;
+}
+
+/* ===== Main Container ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 1000px;
+  margin-top: 60px; /* avoid overlapping navbar */
+}
+
+/* ===== Card Sections ===== */
+.card {
+  position: absolute;
+  width: 70%;
+  max-width: 800px;
+  height: 70%;
+  background: #1c1c22;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: all 0.8s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card.show {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+h2 {
+  color: #00bcd4;
+}
+
+/* ===== Resume Button ===== */
+.download-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #0099aa;
+}

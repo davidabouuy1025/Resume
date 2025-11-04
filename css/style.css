@@ -49,6 +49,7 @@ html {
 .nav-links a {
   color: #fff8dc;
   margin-left: 20px;
+  border-right: 0px;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }

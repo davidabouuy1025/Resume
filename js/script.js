@@ -14,3 +14,8 @@ function revealSections() {
 document.getElementById('contactBtn').addEventListener('click', () => {
   alert("You can reach me at:\n📞 +6019-3402828\n📧 myleejm23@gmail.com");
 });
+
+// ===== Job Button Action =====
+document.getElementById('jobBtn').addEventListener('click', () => {
+  window.location.href = "job.html"
+});
