@@ -1,133 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's About Me</title>
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font (clean modern look) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Link CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- ===== Navigation Bar ===== -->
-    <header class="navbar">
-        <div class="nav-title">RESUME</div>
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#more">More</a>
-        </nav>
-    </header>
+  <!-- ===== Navigation Bar ===== -->
+  <header class="navbar">
+    <div class="nav-title">RESUME</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#project">Projects</a>
+      <a href="#interests">Interests</a>
+    </nav>
+  </header>
 
-    <!-- ===== Hero Section ===== -->
-    <section class="hero" id="about">
-        <div class="hero-text">
-            <h1>Hi, I’m <span class="highlight">Jun Ming (David)</span></h1>
-            <p>
-                A <b>tech-savvy and analytical 19yo. individual</b> with strong foundations in 
-                <b>Computer Science</b> and <b>Mathematics</b>.<br><br>
-                Skilled in problem-solving, logical thinking, and system design — always 
-                eager to explore new technologies and real-world challenges.
-            </p>
-            <button class="btn" id="contactBtn">Contact Me 📞</button>
-        </div>
-        <div class="hero-img">
-            <img src="images/Pic2.jpg" alt="Profile Picture">
-        </div>
-    </section>
-
-    <!-- ===== Marquee Text ===== -->
-    <div class="scroll-text">
-        <span>WELCOME TO MY WEBSITE • LEARN MORE ABOUT ME • KEEP SCROLLING ↓</span>
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="about">
+    <div class="hero-text">
+      <h1>Hi, I’m <span class="highlight">Jun Ming (David)</span></h1>
+      <p>
+        A <b>tech-savvy and analytical 19yo individual</b> with strong foundations in 
+        <b>Computer Science</b> and <b>Mathematics</b>.<br><br>
+        Skilled in problem-solving, logical thinking, and system design — always 
+        eager to explore new technologies and real-world challenges.
+      </p>
+      <button class="btn" id="contactBtn">Contact Me 📞</button>
     </div>
+    <div class="hero-img">
+      <img src="images/Pic2.jpg" alt="Profile Picture">
+    </div>
+  </section>
 
-    <!-- ===== Education Section ===== -->
-    <section class="section" id="education">
-        <h2>Education 🎓</h2>
-        <div class="content-box">
-            <div class="card">
-                <h3>SMJK Chong Hwa</h3>
-                <p>Sijil Pelajaran Malaysia (SPM)</p>
-                <p>📜 7A+ 2A 1A-</p>
-                <p>📅 2019 – 2024</p>
+  <!-- ===== Marquee Text ===== -->
+  <div class="scroll-text">
+    <span>WELCOME TO MY WEBSITE • LEARN MORE ABOUT ME • KEEP SCROLLING ↓</span>
+  </div>  
 
-            </div>
+  <!-- ===== Education Section ===== -->
+  <section class="section" id="education">
+    <h2>Education 🎓</h2>
+    <div class="content-box">
+      <div class="card">
+        <h3>SMJK Chong Hwa</h3>
+        <p>Sijil Pelajaran Malaysia (SPM)</p>
+        <p>📜 7A+ 2A 1A-</p>
+        <p>📅 2019 – 2024</p>
+      </div>
 
-            <div class="card">
-                <h3>Sunway College</h3>
-                <p>Monash University Foundation Year (MUFY)</p>
-                <p>📜 4 High Distinction</p>
-                <p>📅 2019 – 2024</p>
-            </div>
+      <div class="card">
+        <h3>Sunway College</h3>
+        <p>Monash University Foundation Year (MUFY)</p>
+        <p>📜 4 High Distinction</p>
+        <p>📅 2019 – 2024</p>
+      </div>
 
-            <div class="card">
-                <h3>Monash University</h3>
-                <p>Bachelor of Computer Science</p>
-                <p>⌛ Y1S1</p>
-                <p>📅 2024 – Present</p>
-            </div>
+      <div class="card">
+        <h3>Monash University</h3>
+        <p>Bachelor of Computer Science</p>
+        <p>⌛ Y1S1</p>
+        <p>📅 2024 – Present</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== Experience Section ===== -->
+  <section class="section dark" id="experience">
+    <h2>Experience 💼</h2>
+    <div class="content-box">
+      <div class="card">
+        <h3>Popular Book Co.</h3>
+        <p>📍 Event Crew + Retail Assistant</p>
+        <p>🏬 Popular BookFest 2025</p>
+      </div>
 
+      <div class="card">
+        <h3>Coach New York</h3>
+        <p>📍 Retail Assistant</p>
+        <p>👜 Coach KLCC (2024)</p>
+        <p>👜 Coach Pavilion (2025)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Project Section (Upgraded UI) ===== -->
+  <section class="section gradient" id="project">
+    <h2>Projects 🧑‍💻</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-icon">🏥</div>
+        <div class="project-info">
+          <h3>CareLog</h3>
+          <p>Hospital management system for logging patient data, tracking moods, and managing appointments securely.</p>
+          <a href="#" target="_blank" class="project-link">🔗 View Project</a>
         </div>
-    </section>
+      </div>
 
-    <!-- ===== Experience Section ===== -->
-    <section class="section dark" id="experience">
-        <h2>Experience 💼</h2>
-        <div class="content-box">
-            <div class="card">
-                <h3>Popular Book Co.</h3>
-                <p>📍 Event Crew +  Retail Assistant</p>
-                <p>🏬 Popular BookFest 2025</p>
-            </div>
-
-            <div class="card">
-                <h3>Coach New York</h3>
-                <p>📍Retail Assistant</p>
-                <p>👜 Coach KLCC (2024)</p>
-                <p>👜 Coach Pavilion (2025)</p>
-            </div>
+      <div class="project-card">
+        <div class="project-icon">💬</div>
+        <div class="project-info">
+          <h3>EchoLink</h3>
+          <p>Social communication app integrating Streamlit and MySQL for chat, mood tracking, and profile management.</p>
+          <a href="https://echolink.streamlit.app/" target="_blank" class="project-link">🔗 Visit EchoLink</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== Experience Section ===== -->
-    <section class="section" id="project">
-        <h2>Projects 🧑‍💻</h2>
-        <div class="content-box">
-            <div class="card">
-                <h3>CareLog</h3>
-                <p>🏥 Hospital management system for logging patient data, tracking moods, and handling appointments and records securely</p>
-                <a href="" target="_blank">🔗 Visit CareLog (Temporarily unavailable)</a>
-            </div>
+  <!-- ===== Interests Section (New UI) ===== -->
+  <section class="section dark" id="interests">
+    <h2>My Interests 💡</h2>
+    <div class="interest-container">
+      <div class="interest">
+        <span class="emoji">🧠</span>
+        <h3>Cybersecurity</h3>
+        <p>Exploring ethical hacking and digital forensics — understanding how vulnerabilities are exploited and patched.</p>
+      </div>
 
-            <div class="card">
-                <h3>EchoLink</h3>
-                <p>🗣️ Real-time chat simulation with mood tracker</p>
-                <a href="https://echolink.streamlit.app/" target="_blank">🔗 Visit EchoLink</a>
-            </div>
-        </div>
-    </section>
+      <div class="interest">
+        <span class="emoji">⚙️</span>
+        <h3>Software Engineering</h3>
+        <p>Building and optimizing systems that solve real-world problems efficiently using clean, scalable code.</p>
+      </div>
 
-    <!-- ===== More Section ===== -->
-    <section class="section dark" id="more">
-        <h2>More About Me ✨</h2>
-        <div class="content-box">
-            <p>I enjoy exploring cybersecurity, ethical hacking, and system design. 
-               In my free time, I compose rhythms for 24 Festive Drums performances 🥁.</p>
-            <!-- TODO: Add hobbies, goals, or achievements -->
-        </div>
-    </section>
+      <div class="interest">
+        <span class="emoji">🥁</span>
+        <h3>24 Festive Drums</h3>
+        <p>Composing and performing drum rhythms, expressing creativity through synchronized beats and movements.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== Footer ===== -->
-    <footer class="footer">
-        <p>© 2025 Jun Ming. Built with 💻 HTML, CSS & JavaScript.</p>
-    </footer>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2025 Jun Ming. Built with 💻 HTML, CSS & JavaScript.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- ===== JavaScript ===== -->
+  <script src="script.js"></script>
 </body>
 </html>
