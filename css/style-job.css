@@ -1,29 +1,46 @@
-/* ===== Basic Styling ===== */
+/* ===== Basic Setup ===== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0e0e10;
-  color: #fff;
-  overflow: hidden;
+  background: #dfddd8;
+  color: #000000;
 }
 
 /* ===== Navbar ===== */
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #141418;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  background: #4A70A9;
+  padding: 15px 50px;
+  color: #8FABD4;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-title-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-title {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 700;
+  color: #ffffff;
+  text-decoration: None;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+
+  to {
+    text-shadow: 0 0 15px #dccf9c;
+  }
 }
 
 .nav-links .nav-btn {
@@ -33,50 +50,52 @@ body {
   margin-left: 20px;
   font-size: 1em;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
-.nav-links .nav-btn:hover {
+.nav-links .nav-btn:hover,
+.nav-links .nav-btn.active {
   color: #00bcd4;
 }
 
-/* ===== Main Container ===== */
-.container {
+/* ===== Page Content ===== */
+.content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  perspective: 1000px;
-  margin-top: 60px; /* avoid overlapping navbar */
+  padding: 60px 0;
 }
 
-/* ===== Card Sections ===== */
+/* ===== Card Section ===== */
 .card {
-  position: absolute;
-  width: 70%;
-  max-width: 800px;
-  height: 70%;
-  background: #1c1c22;
+  width: 80%;
+  max-width: 900px;
+  background: #8FABD4;
   border-radius: 20px;
   padding: 40px;
   text-align: center;
+  font-size: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  margin: 50px 0;
+  transform: translateY(30px);
   opacity: 0;
-  transform: rotateY(90deg);
   transition: all 0.8s ease;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .card.show {
   opacity: 1;
-  transform: rotateY(0deg);
+  transform: translateY(0);
 }
 
 h2 {
-  color: #00bcd4;
+  color: #ffffff;
+  font-size: 250%;
+  animation: glow 3s infinite alternate;
 }
 
-/* ===== Resume Button ===== */
-.download-btn {
+/* ===== Buttons ===== */
+.btn-link,
+.btn-download {
   margin-top: 20px;
   padding: 12px 20px;
   border: none;
@@ -85,9 +104,24 @@ h2 {
   color: #fff;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
   transition: 0.3s;
 }
 
-.download-btn:hover {
+.btn-link:hover,
+.btn-download:hover {
   background: #0099aa;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links .nav-btn {
+    font-size: 0.9em;
+  }
+
+  .card {
+    width: 90%;
+    padding: 25px;
+  }
 }

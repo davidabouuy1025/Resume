@@ -1,25 +1,28 @@
-// ===== Select all buttons and cards =====
-const buttons = document.querySelectorAll(".nav-btn");
-const cards = document.querySelectorAll(".card");
+// Smoothly scroll to section when button clicked
+const buttons = document.querySelectorAll('.nav-btn');
 
-// ===== Handle Section Switching =====
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const target = button.getAttribute("data-section");
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
 
-    // Hide all sections
-    cards.forEach(card => card.classList.remove("show"));
-
-    // Show target section
-    document.getElementById(target).classList.add("show");
+    const target = document.getElementById(btn.dataset.target);
+    target.scrollIntoView({ behavior: "smooth" }); // ✅ Smooth scrolling
   });
 });
 
-// ===== Download Resume =====
-document.getElementById("downloadBtn").addEventListener("click", () => {
-  // You can replace the link with your actual PDF path later
-  const link = document.createElement("a");
-  link.href = "resume.pdf"; // Put your resume file name here
-  link.download = "JunMing_Resume.pdf";
-  link.click();
+// Add scroll animation when sections appear
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+});
+  
+// Resume download button
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  window.open('files/Resume.pdf', '_blank');
 });

@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jun Ming | Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
   <!-- Link to CSS -->
-  <link rel="stylesheet" href="css/style-job.css" />
+  <link rel="stylesheet" href="css/style-job.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- ===== Navigation Bar ===== -->
+  <!-- ===== Navbar ===== -->
   <header class="navbar">
-    <div class="nav-title">JUN MING</div>
+    <a href="main.html" class="nav-title-link">
+      <div class="nav-title">RESUME</div>
+    </a>
     <nav class="nav-links">
-      <button class="nav-btn" data-section="about">About</button>
-      <button class="nav-btn" data-section="skills">Skills</button>
-      <button class="nav-btn" data-section="projects">Projects</button>
-      <button class="nav-btn" data-section="resume">Resume</button>
+      <button class="nav-btn active" data-target="about">About</button>
+      <button class="nav-btn" data-target="skills">Experience</button>
+      <button class="nav-btn" data-target="resume">Resume</button>
     </nav>
   </header>
 
-  <!-- ===== Rotating Container ===== -->
-  <main class="container">
-
-    <!-- About Section -->
+  <main class="content">
     <section class="card show" id="about">
-      <h2>About Me 👨‍💻</h2>
-      <p>🟦 Write about yourself here — background, goals, or interests.</p>
-      <p>Example: I’m a Computer Science student passionate about software engineering, system design, and cybersecurity.</p>
+      <h2>About Me</h2>
+      <p>👦 Lee Jun Ming</p>
+      <p>📍 19 y.o.</p>
+      <p>🏠 Based in Kuala Lumpur</p>
+      <p>🚇 Usually travel by LRT/ MRT</p>
+      <p><strong>Self-motivated | Ambitious | Curious</strong></p>
     </section>
 
-    <!-- Skills Section -->
     <section class="card" id="skills">
-      <h2>Skills ⚙️</h2>
+      <h2>Work Experience : Retail-related</h2>
+      <a style="font-size: 140%;color: black;text-decoration: 1;" href="https://malaysia.coach.com/" target="_blank"><strong>Coach New York</strong></a>
+      <br>
       <ul>
-        <li>💻 Programming: Python, C++, JavaScript</li>
-        <li>🛠️ Tools: Git, VS Code, Streamlit, MySQL</li>
-        <li>🧠 Interests: Ethical Hacking, Networking, AI</li>
+        <li>💻 <b>Marketing</b> - Promoting leather goods on RedNote (XiaoHongShu)</li>
+        <li>🧩 <b>Inventory</b> - Receiving and organizing shipments, experience in stocktaking</li>
+        <li>🔐 <b>Customer Service</b> - Greeting and assisting customers to find what they need</li>
+        <li>💳 <b>Sales and transaction</b> - Processing payments with using POS system accurately</li>
       </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section class="card" id="projects">
-      <h2>Projects 🚀</h2>
-      <p>🟩 Reserve space here for your projects with short descriptions.</p>
-      <p>Example: EchoLink — a social platform integrating MySQL and Streamlit.</p>
+    <section class="card" id="skills">
+      <h2>Work Experience : event crew-related</h2>
+      <p style="font-size: 140%;"><strong>PingMin Event Crew</strong></p>
+      <p style="font-size: 140%;"><strong>Popular Book Co. Event Crew</strong></p>
+      <br>
+      <ul>
+        <li>🧩 <b>Inventory</b> - Product replenishment & product touch-ups</li>
+        <li>🧑‍🔧 <b>Setup/Dismantle</b> - Assemble and disassemble event equipment efficiently</li>
+        <li>🔐 <b>Customer Service</b> - Greeting and assisting customers to find what they need</li>
+      </ul>
+
+    </section>
+        <section class="card" id="skills">
+      <h2>Looking Forward</h2>
+      <p style="font-size: 140%;"><strong>Data Entry ⌨️</strong></p>
+      <p style="font-size: 140%;"><strong>Retail-related 🛍️</strong></p>
+      <p style="font-size: 140%;"><strong>Barista | Event Crew ☕</strong></p>
+      <br>
+      <p>Open to any job opportunities 💫</p>
     </section>
 
-    <!-- Resume Section -->
     <section class="card" id="resume">
-      <h2>Resume 📄</h2>
-      <p>🟨 Add your short professional summary or achievements here.</p>
-      <button class="download-btn" id="downloadBtn">Download Resume ⬇️</button>
+      <h2>Resume</h2>
+      <button class="btn-download" id="downloadBtn">⬇️ Download Resume</button>
     </section>
-
   </main>
 
-  <!-- ===== Script ===== -->
-  <script src="script.js"></script>
+  <!-- JS -->
+  <script src="js/script-job.js"></script>
 </body>
 </html>

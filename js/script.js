@@ -17,5 +17,5 @@ document.getElementById('contactBtn').addEventListener('click', () => {
 
 // ===== Job Button Action =====
 document.getElementById('jobBtn').addEventListener('click', () => {
-  window.location.href = "job.html"
+  window.open("job.html", "_blank");
 });
